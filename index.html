@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Live Forum</title>
+    <style>
+      /* I used important for some styles to override inline styles as inline styles have more specifities than any other CSS selectors */
+
+      @media(min-width: 600px) {
+        /* Header */
+        .header {
+          max-width: 394px;
+          margin: auto;
+          padding-bottom: 26px !important;
+        }
+
+        .header a {
+          font-size: 18px;
+          line-height: 22px;
+        }
+
+        .shop-section-wrapper > div {
+          margin-bottom: 25px;
+        }
+
+        .shop-section-wrapper > h2 {
+          font-size: 40px !important;
+          line-height: 49px !important;
+        }
+
+        .shop-section-wrapper > p {
+          padding: 9px 0 27px;
+        }
+
+        /* Best Seller */
+        .best-seller-section-wrapper {
+          margin-top: -4px;
+          padding: 0 8px 36px;
+        }
+
+        .best-seller-section-wrapper > h2 {
+          font-size: 36px !important;
+          line-height: 44px !important;
+          margin: 30px 0 !important;
+        }
+
+        .best-seller-section-wrapper > button {
+          font-size: 18px !important;
+          line-height: 22px !important;
+        }
+
+        .best-seller-section-wrapper .face-makeup {
+          margin: 10px 0 28px;
+        }
+
+        .best-seller-section-wrapper ul {
+          display: flex;
+          justify-content: center;
+          gap: 60px;
+        }
+
+        .best-seller-section-wrapper li~li {
+          margin: 0 !important;
+        }
+
+        /* Blog section */
+        .blog-section-wrapper {
+          padding: 6px 30px 25px;
+        }
+
+        .blog-section-wrapper ul {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .blog-section-wrapper li {
+          margin: 0 !important;
+        }
+
+        /* Footer  */
+        .footer-wrapper {
+          padding: 0px 36px 0 28px;
+        }
+
+        .footer-wrapper ul {
+          margin-bottom: 28px !important;
+        }
+      }
+
+    </style>
+  </head>
+  <body style="text-align: center; font-size: 16px; margin: 0; color: #2A4558; font-family: 'Montserrat';">
+    <header style="padding: 0 23px 32px;" class="header">
+      <div  style="max-width: 600px; margin: auto;">
+        <h1>
+          <a href="#">
+            <img src="./assets/diamond-vector-logo 1.svg" alt="Logo">
+          </a>
+        </h1>
+        <nav>
+          <ul
+            style="
+              margin: 0; padding: 0; display: flex; justify-content: space-between; align-items: center;
+              flex-wrap: wrap; list-style: none; font-size: 16px; line-height: 20px;
+            "
+          >
+            <li><a style="text-decoration: none; color: #5282CA;" href="#shop">Shop</a></li>
+            <li><a style="text-decoration: none; color: #5282CA;" href="#best-seller">Best Seller</a></li>
+            <li><a style="text-decoration: none; color: #5282CA;" href="#blog">Blog</a></li>
+            <li><a style="text-decoration: none; color: #5282CA;" href="#contacts">Contacts</a></li>
+          </ul>
+        </nav42>
+      </div>
+    </header>
+    <main>
+      <!-- Shop section -->
+      <section
+        style="background-color: #D0DAE3; color: #2A4558;"
+        id="shop"
+        class="shop-section"
+      >
+        <div class="shop-section-wrapper" style="padding: 34px 23px 13px 23px; max-width: 600px; margin: auto;">
+          <div style="font-size: 18px; line-height: 22px;"><i>Eggstra - Eggstra</i></div>
+          <h2 style="max-width: 360px; margin: 12px auto 32px auto; font-weight: 700; font-size: 36px; line-height: 44px;">
+            EASTER SALES 30% OFF
+          </h2>
+          <p style="line-height: 30px; max-width: 632px; margin: auto;">
+            Spring is in full bloom, and we're excited to bring you the latest beauty trends and essential products to help you 
+            look and feel your best this season. We have everything you need to achieve that fresh and glowing Easter look.
+          </p>
+          <button
+            style="
+              margin-top: 26px; cursor: pointer; width: 202px; height: 50px; border: 1px solid #2A4558;
+              border-radius: 10px; background-color: transparent; font-weight: 700; font-size: 18px; line-height: 22px;
+            "
+          >
+            Hurry Up
+        </button>
+      </div>
+      <div>
+        <img
+          style="width: 100%; display: block;"
+          src="./assets/high-angle-different-beauty-blenders 1.png"
+          alt="High angle different beauty blenders"
+        >
+      </div> 
+      </section>
+      <!-- Best seller section -->
+      <section style="padding: 53px 22px;" id="best-seller" class="best-seller-section">
+        <div class="best-seller-section-wrapper" style="max-width: 600px; margin: auto;">
+          <div style="font-size: 18px; line-height: 22px; font-weight: 700; margin-bottom: 28px;">Easter day sales</div>
+          <h2 style="font-size: 32px; line-height: 39px; margin: 28px 0;">Get Your Glow on</h2>
+          <p style="line-height: 30px; margin: 28px 0;">
+            Our team of beauty experts have curated the best products for you, along with helpful tips and tricks to 
+            help you make the most out of your beauty routine.
+          </p>
+          <button
+            style="
+              background: #2A4558; border: 1px solid #2A4558; cursor: pointer; border-radius: 10px;
+              color: #FFFFFF; font-weight: 700; font-size: 16px; line-height: 20px; padding: 20px 28px;
+            "
+          >
+            Coupon Code: HAPPYEASTER
+          </button>
+          <div class="face-makeup">
+            <ul style="margin: 51px 0; padding: 0; list-style: none;">
+              <li>
+                <img src="./assets/face-oil.png" alt="Face oil">
+                <h3 style="font-weight: 400; font-size: 32px; line-height: 39px; margin: 12px 0;">Face Oil</h3>
+                <p style="line-height: 24px; max-width: 240px; margin: auto;">
+                  The best face oils nourish the skin and provide other benefits, like antioxidant protection, anti-aging properties, and more.
+                </p>
+                <button
+                  style="
+                    padding: 20px 39px; text-transform: uppercase; cursor: pointer; font-weight: 700; font-size: 18px; line-height: 22px;
+                    margin-top: 31px; background: #2A4558; color: #ffff; border: 1px solid #2A4558; border-radius: 10px;
+                  "
+                >
+                  Shop Now
+                </button>
+              </li>
+              <li style="margin-top: 63px;">
+                <img src="./assets/face-cream.png" alt="Face cream">
+                <h3 style="font-weight: 400; font-size: 32px; line-height: 39px; margin: 12px 0;">Face Cream</h3>
+                <p style="line-height: 24px; max-width: 240px; margin: auto;">
+                  Applying a face cream is a fundamental step in any beauty routine. Make sure you choose the right cream for your skin type.
+                </p>
+                <button 
+                  style="
+                    padding: 20px 39px; text-transform: uppercase; cursor: pointer; font-weight: 700; font-size: 18px; line-height: 22px;
+                    margin-top: 31px; background: #2A4558; color: #ffff; border: 1px solid #2A4558; border-radius: 10px;
+                  "
+                >
+                  Shop Now
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Blog section -->
+      <section style="background-color: #D98483;" id="blog" class="blog-section">
+        <div class="blog-section-wrapper" style="max-width: 600px; margin: auto;">
+          <ul style="padding: 32px 0 26px; margin: 0; list-style: none;">
+            <li style="margin-bottom: 64px; cursor: pointer;">
+              <img src="./assets/cruelty.svg" alt="Cruelty Free">
+              <div style="color: #FFFFFF; margin-top: 13px; font-size: 18px; line-height: 24px;">Cruelty Free</div>
+            </li>
+            <li style="margin-bottom: 64px; cursor: pointer;">
+              <img src="./assets/plant.svg" alt="No Nasty Toxins">
+              <div style="color: #FFFFFF; margin-top: 13px; font-size: 18px; line-height: 24px;">No Nasty Toxins</div>
+            </li>
+            <li style="cursor: pointer;">
+              <img src="./assets/charity.svg" alt="1% to Charity">
+              <div style="color: #FFFFFF; margin-top: 13px; font-size: 18px; line-height: 24px;">1% to Charity</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Footer - Contacts section-->
+    <footer style="background-color: #2A4558; padding: 50px 18px;" id="contacts" class="footer">
+      <div class="footer-wrapper" style="max-width: 600px; margin: auto;">
+        <ul style="margin: 0; padding: 0; display: flex; justify-content: space-between; max-width: 232px; margin: auto auto 50px;">
+          <li><a href="#facebook"><img src="./assets/facebook.svg" alt="Facebook"></a></li>
+          <li><a href="#instagram"><img src="./assets/instagram.svg" alt="Instagram"></a></li>
+          <li><a href="#linkedin"><img src="./assets//linkedin.svg" alt="LinkedIn"></a></li>
+          <li><a href="#twitter"><img src="./assets/twitter.svg" alt="Twitter"></a></li>
+        </ul>
+        <h3 style="color: #FFFFFF; margin: 0 0 32px; font-size: 16px; line-height: 24px;">Company Name | Company Locations</h3>
+        <p style="color: #FFFFFF; font-size: 16px; line-height: 24px; margin: 0 0 32px;">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.Maecenas a massa a nibh pharetra vehicula. Suspendisse 
+        </p>
+        <p style="color: #FFFFFF; margin: 0; font-size: 16px; line-height: 24px;">
+          Questions? Emails us at example@example.comQuestions relating to privacy and the protection of your personal information should be sent to
+          <a style="color: #FFFFFF;" href="#example@example.com">example@example.com</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
